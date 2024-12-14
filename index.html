@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>90s Fan Page</title>
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/88/88254.png" type="image/png">
-
+    <title>90s Nostalgia Zone</title>
+    <link rel="shortcut icon" href="download.jpg" type="image/x-icon">
     <style>
+       
         body {
             background: url('https://www.transparenttextures.com/patterns/old-mathematics.png') repeat;
             color: limegreen;
             font-family: "Comic Sans MS", cursive, sans-serif;
             text-align: center;
             margin: 0;
+            padding: 0;
         }
 
-        h1 {
+        h1, h2 {
             text-shadow: 2px 2px magenta;
             animation: colorChange 3s infinite;
         }
@@ -34,6 +35,26 @@
             padding: 10px 0;
         }
 
+        .counter {
+            background: black;
+            color: red;
+            font-family: "Courier New", monospace;
+            padding: 5px;
+            margin: 10px auto;
+            width: fit-content;
+            border: 3px ridge silver;
+        }
+
+        .content-section {
+            background: rgba(0, 0, 0, 0.8);
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            border: 5px ridge cyan;
+            color: white;
+            text-align: left;
+        }
+
         .gallery {
             margin: 20px auto;
             width: 80%;
@@ -46,6 +67,25 @@
             height: 150px;
         }
 
+        .memories {
+            background: #000080;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border: 5px outset #e9e9e9;
+            color: #00ff00;
+        }
+
+        .memories ul {
+            text-align: left;
+            list-style-type: "🌟";
+            padding-left: 40px;
+        }
+
+        .memories li {
+            margin: 10px 0;
+        }
+
         .guestbook {
             margin: 30px 0;
             background: yellow;
@@ -56,23 +96,42 @@
             cursor: pointer;
         }
 
-        .guestbook:hover {
-            background: orange;
+        .vedio {
+            background: url(confetti.gif);
+            transition: background 0.3s ease;
         }
 
         footer {
             margin-top: 20px;
             background: black;
             color: white;
-            padding: 10px 0;
+            padding: 20px 0;
         }
     </style>
 </head>
 <body>
-    <marquee class="marquee">Welcome to the Best 90s Fan Page on the Web!</marquee>
+    <audio id="clickSound">
+        <source src="liked.mp3" type="audio/mp3">
+    </audio>
 
-    <h1>Welcome to My 90s Fan Page!</h1>
-    <p>This page is dedicated to all things 90s! Enjoy the GIFs, colors, and retro vibes.</p>
+    <marquee class="marquee">🌟 Welcome to the Ultimate 90s Nostalgia Zone! 🌟</marquee>
+
+
+    <h1>🌟 90s Forever! 🌟</h1>
+    
+    <div class="content-section">
+        <h2>Why The 90s Were Totally Radical! 🎮</h2>
+        <p>Remember when the internet made that sweet dial-up sound? When Pokemon cards were literally gold? When your Tamagotchi was your best friend? The 90s weren't just a decade - they were a VIBE!</p>
+        
+        <p>Back then, we:</p>
+        <ul>
+            <li>Waited forever for websites to load (and loved it!)</li>
+            <li>Recorded songs from the radio onto cassettes</li>
+            <li>Played Snake on our Nokia phones</li>
+            <li>Rocked those colorful slap bracelets</li>
+            <li>Had fierce Pog championships</li>
+        </ul>
+    </div>
 
     <div class="gallery">
         <img src="https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif" alt="Dancing GIF">
@@ -84,22 +143,73 @@
         <img src="https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif" alt="Boombox">
         <img src="https://media.giphy.com/media/f9k1tV7HyORcngKF8v/giphy.gif" alt="Cassette Tape">
         <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Cat Typing">
-        <img src="https://media.giphy.com/media/xUOwGoNa6ZABk9kF3W/giphy.gif" alt="Retro Smile">
-        <img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" alt="Disco Ball">
         <img src="https://media.giphy.com/media/mCRJDo24UvJMA/giphy.gif" alt="TV Static">
-        <img src="https://media.giphy.com/media/A1pI7zHCe4cCW/giphy.gif" alt="Pizza Slice">
         <img src="https://media.giphy.com/media/10dU7AN7xsi1I4/giphy.gif" alt="Dancing Baby">
         <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="Spinning CD">
         <img src="https://media.giphy.com/media/ZBQhoZC0nqknSviPqT/giphy.gif" alt="Confetti Explosion">
         <img src="https://media.giphy.com/media/Ju7l5y9osyymQ/giphy.gif" alt="Cheerleader">
-        <img src="https://media.giphy.com/media/l0HlVT2yiLWuP6Mog/giphy.gif" alt="Game Over">
         <img src="https://media.giphy.com/media/12XMGIWtrHBl5e/giphy.gif" alt="VHS Tape">
+<img src="https://media.giphy.com/media/3oz8xKaR836UJOYeOc/giphy.gif" alt="Roller Skates">
+<img src="https://media.giphy.com/media/l1J9EdzfOSgfyueLm/giphy.gif" alt="Bubble Gum">
+<img src="https://media.giphy.com/media/xT9IgIc0lryrxvqVGM/giphy.gif" alt="Retro TV">
+
+
     </div>
 
-    <div class="guestbook">Sign My Guestbook!</div>
+    <div class="memories">
+        <h2>🌈 90s Greatest Hits 🌈</h2>
+        <ul>
+            <li>Drawing that Cool S everyone knew how to make</li>
+            <li>Rushing home to watch afternoon cartoons</li>
+            <li>Trying to keep your Tamagotchi alive during school</li>
+            <li>Blowing into game cartridges to make them work</li>
+            <li>Using AIM to chat with your BFFs</li>
+            <li>Having the coolest Lisa Frank folder collection</li>
+            <li>Playing Oregon Trail in computer class</li>
+            <li>Watching Nickelodeon when it was all that and a bag of chips!</li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <h2>Why This Website? 💫</h2>
+        <p>This page exists because the 90s were AMAZING! Before social media, before smartphones, we had real magic - like waiting an entire week for your favorite TV show, or spending hours creating the perfect mix tape.</p>
+        
+        <p>Today's world is cool, but nothing beats the pure joy of:</p>
+        <ul>
+            <li>Finally beating that impossible video game level (without YouTube tutorials!)</li>
+            <li>The excitement of getting a new issue of your favorite magazine</li>
+            <li>Trading Pokemon cards at recess</li>
+            <li>Having your own personal CD player (with anti-skip protection!)</li>
+        </ul>
+    </div>
+<div class="image">
+    <img style="border: 5px solid hotpink;" src="images.jpg" alt="">
+</div>
+    <div class="guestbook">Like it? Hit here! :)</div>
 
     <footer>
-        <p>© 1990s Fan Page. Made with 💾 and nostalgia.</p>
+        <p>© 1990s Nostalgia Zone. Made with 💾 and totally radical memories!</p>
+        <p>Best viewed in Netscape Navigator</p>
+        <small>No frames, no flash, just pure 90s vibes!</small>
     </footer>
+
+    <script>
+        const guestbook = document.querySelector(".guestbook");
+        const audio = document.getElementById("clickSound");
+        
+        guestbook.addEventListener("click", () => {
+           
+            audio.currentTime = 0; 
+            audio.play();
+            
+           
+            document.body.classList.add("vedio");
+            
+        
+            setTimeout(() => {
+                document.body.classList.remove("vedio");
+            }, 5000);
+        });
+    </script>
 </body>
 </html>
